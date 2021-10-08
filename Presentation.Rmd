@@ -1,0 +1,25 @@
+---
+title: "Outward"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+pacman::p_load("ggplot2","tidyverse")
+```
+
+
+## Data of HIV and School Years
+I specifically choose the data of HIV and average school years for adults in Australia to see if there is an underlying relationship between those two variables. Based on the hypothesis that the increase of average years in school will lead to a decrease of HIV of adults, I choose the data from 2000 to 2008, which is the following:
+
+```{r}
+source("~/Desktop/Wrangling_Data.R")
+```
+
+## Relationship Between the Two Variables
+After fitting a regression line to these two variables, the result shows an opposite trend to the hypothesis. The data from Australia shows a trend that with increasing average years of schooling, the number of people with HIV increases. 
+
+
+```{r}
+source("~/Desktop/Visualization_R.R")
+```
